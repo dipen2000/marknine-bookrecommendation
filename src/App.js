@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import {useState} from "react";
 import './App.css';
 
 let songDatabase = {
@@ -164,20 +165,37 @@ let instrumental = [{
 
 
 function App() {
+  const [genre , setGenre] = useState(rock);
+  function rockClickListner(){
+    setGenre(rock);  
+  }
+
+  function popClickListner(){
+    setGenre(pop);
+  }
+
+  function hipHopClickListner(){
+    setGenre(hipHop);
+  }
+
+  function instrumentalClickListner(){
+    setGenre(instrumental);
+  }
+
   return (
     <div className="App">
       <h1 className="heading">Song Recommendations</h1>
       <div className="container">
         <div className="btn-container" >
-          <button className="btn active">Rock</button>
-          <button className="btn">Pop</button>
-          <button className="btn">Hip-Hop</button>
-          <button className="btn">Instrumental</button>
+          <button className="btn active" onClick={rockClickListner}>Rock</button>
+          <button className="btn" onClick={popClickListner}>Pop</button>
+          <button className="btn" onClick={hipHopClickListner}>Hip-Hop</button>
+          <button className="btn" onClick={instrumentalClickListner}>Instrumental</button>
         </div>
         <hr className="hr"/>
 
         {
-          rock.map((song)=>{
+          genre.map((song)=>{
             return (
               <div className="list-ele-container">
                   <img
