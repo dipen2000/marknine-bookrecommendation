@@ -1,3 +1,14 @@
+:root{
+  --bg-color : #111827;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color : var(--bg-color);
+  margin : 0;
+  padding : 0;
+}
 .App {
   text-align: center;
 }
@@ -12,6 +23,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +48,102 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.heading{
+  color : white;
+   
+}
+.container{
+  width : 60%;
+  max-width: 800px;
+  margin : 2rem auto;
+  /* border: 3px solid red; */
+}
+.btn-container{
+  /* border: 3px solid blue; */
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin : auto;
+  
+}
+
+.btn{
+  outline: none;
+  border : 3px solid rebeccapurple;
+  color : white;
+  border-radius: 30px;
+  padding : 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin : 0 1rem 0 1rem;
+  background-color : rgb(66, 60, 60);
+  cursor : pointer;
+}
+
+.btn:hover{
+  background-color : rebeccapurple;
+}
+
+.hr{
+  margin : 1rem auto;
+  background-color : rebeccapurple;
+}
+
+.list-container{
+  /* border : 3px solid green; */
+  width : 80%;
+  margin : auto;
+}
+
+.list-ele-container{
+  /* border : 3px solid purple; */
+  display : flex;
+  flex-direction: row;
+  align-items : center;
+  justify-content : center;
+  margin : 1rem auto;
+  border-radius: 10px;
+  background-color : rgb(61, 58, 58);
+}
+
+.img{
+  height : 150px;
+  width : 150px;
+  margin : 0.5rem 0;
+  border-radius: 10px;
+}
+
+.desc-div{
+  /* border : 3px solid blue; */
+  width : 60%;
+}
+
+.p-tag-desc{
+  margin : 0.5rem 0 0.5rem 0;
+  color : white;
+}
+
+.spotify-link{
+  text-decoration: none;
+  color : white;
+  margin : 0.5rem 0 0.5rem 0;
+}
+
+.fab{
+  margin : 0 0.2rem 0 0.2rem;
+  font-size: 1.2rem;
+  color : white;
+}
+
+.spotify-section{
+  display : flex;
+  flex-direction: row;
+  align-items : center;
+  justify-content : center;
+  background-color: green;
+  border-radius: 15px;
+  width : 45%;
+  margin : auto;
+  cursor: pointer;
 }
