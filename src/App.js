@@ -169,7 +169,7 @@ function App() {
       <h1 className="heading">Song Recommendations</h1>
       <div className="container">
         <div className="btn-container" >
-          <button  className="btn">Rock</button>
+          <button className="btn active">Rock</button>
           <button className="btn">Pop</button>
           <button className="btn">Hip-Hop</button>
           <button className="btn">Instrumental</button>
@@ -190,7 +190,7 @@ function App() {
                     <p className="p-tag-desc">Artist : {song["Artist"]}</p>
                     <div className="spotify-section">
                       <i class="fab fa-spotify"></i>
-                      <a className="spotify-link" href={song["spotifyLink"]}>
+                      <a className="spotify-link" href={song["spotifyLink"]} target="_blank">
                         Spotify
                       </a>
                     </div>

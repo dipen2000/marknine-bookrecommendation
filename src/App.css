@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 :root{
   --bg-color : #111827;
 }
@@ -52,7 +54,9 @@ body{
 
 .heading{
   color : white;
-   
+  font-family: 'Mali', cursive;
+  font-weight: bold;
+  font-size : 2.3rem;
 }
 .container{
   width : 60%;
@@ -69,6 +73,8 @@ body{
   
 }
 
+
+
 .btn{
   outline: none;
   border : 3px solid rebeccapurple;
@@ -79,6 +85,12 @@ body{
   margin : 0 1rem 0 1rem;
   background-color : rgb(66, 60, 60);
   cursor : pointer;
+  font-family: 'Mali', cursive;
+  font-weight: bold;
+}
+
+.active{
+  background-color: rebeccapurple;
 }
 
 .btn:hover{
@@ -122,12 +134,14 @@ body{
 .p-tag-desc{
   margin : 0.5rem 0 0.5rem 0;
   color : white;
+  font-family: 'Mali', cursive;
 }
 
 .spotify-link{
   text-decoration: none;
   color : white;
   margin : 0.5rem 0 0.5rem 0;
+  font-family: 'Outfit', sans-serif;
 }
 
 .fab{
